@@ -1,0 +1,59 @@
+@import 'vars';
+
+.Menu {
+	width: 140px;
+	height: auto;
+	// border: 1px solid var(--very-light-pink);
+	box-shadow: #0000001a 0px 4px 12px;
+	border-radius: 4px;
+	padding: 20px 20px 0 20px;
+	position: absolute;
+	top: 45px;
+	right: 3.5rem;
+	background-color: #ffffff;
+	z-index: 2;
+
+}
+.Menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	
+}
+.Menu ul li {
+	width: 100%;
+	
+}
+.Menu ul li:nth-child(1),
+.Menu ul li:nth-child(2) {
+	text-align: start;
+	text-align: left;
+	float: left;
+	font-weight: bold;
+	margin-bottom: 25px;
+	padding: 0;
+}
+.Menu ul li:last-child {
+	width: 100%;
+	border-top: 1px solid var(--very-light-pink);
+}
+.Menu ul li:last-child a {
+	color: var(--hospital-green);
+	text-align: end;
+	font-size: var(--sm);
+	float: right;
+}
+.Menu ul li a {
+	color: var(--back);
+	text-decoration: none;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 910px) {
+.Menu {
+	display: none;
+}
+}

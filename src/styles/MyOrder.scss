@@ -1,0 +1,188 @@
+@import 'vars';
+
+.MyOrder {
+	width: 360px;
+	// padding: 24px;
+	padding: 8px;
+	box-sizing: border-box;
+	position: absolute;
+	right: 0;
+	background-color: #fff;
+	bottom: 0;
+	top: 0;
+	border-radius: 4px;
+	position: fixed;
+	animation: swipeLeft .26s ease;
+	animation: showMenu 350ms ease-in-out both;
+	z-index: 2;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+@keyframes showMenu {
+	from{
+		opacity: 0;
+	}
+	to{opacity: 1;}
+}
+.navbar-right .open-right {
+	transition-duration: 0.8s;
+	// position: relative;
+	z-index: 2;
+	// transform: translateX(-360px);
+}
+.drawer{
+	-webkit-overflow-scrolling: touch;
+	transition: -webkit-transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+	// z-index: 30;
+	max-width: 95%;
+	// position: relative;
+}
+
+.title-container {
+	display: flex;
+	// border: 1px solid black;
+}
+.title-container img {
+	position: absolute;
+	right: 1.5rem;
+	cursor: pointer;
+	// transform: rotate(180deg);
+	// margin-right: 14px;
+}
+#btn-close {
+	width: 28px;
+}
+.title {
+	font-size: var(--lg);
+	font-weight: bold;
+	position: relative;
+	top: 0.25rem;
+	left: 0.5rem;
+}
+.relative {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+	// z-index: 20;
+	// border: 1px solid black;
+}
+
+.my-order-content {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	// left: 0;
+	// right: 0;
+	height: auto;
+	// width: 100%;
+	bottom: 16rem;
+	// padding-top: 1.2rem;
+	overflow: hidden;
+	overflow-y: auto;
+	z-index: 2;
+	// border: 1px solid rgb(81, 255, 0);
+	
+}
+.my-order-content::-webkit-scrollbar {
+	display: none;
+}
+
+.checkout-order-bottom {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 1.5rem;
+	right: 1.5rem;
+	bottom: 1.5rem;
+	
+}
+
+
+.order {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 16px;
+	align-items: center;
+	background-color: var(--text-input-field);
+	border-radius: 8px;
+	padding: 0 24px;
+	position: relative;
+	top: 0.5rem;
+}
+.order p:nth-child(1) {
+	display: flex;
+	flex-direction: column;
+	// color: red;
+	text-transform: uppercase;
+}
+.order p span:nth-child(1) {
+	font-size: var(--md);
+	font-weight: bold;
+}
+.order p:nth-child(2) {
+	text-align: end;
+	font-weight: bold;
+}
+
+.title-bottom {
+	position: relative;
+	
+	bottom: 8px;
+	font-size: .70rem;
+}
+// .btn-cheackout {
+// 	background-color: var(--hospital-green);
+// 	border-radius: 8px;
+// 	// border: none;
+// 	color: var(--white);
+// 	width: 100%;
+// 	cursor: pointer;
+// 	font-size: var(--md);
+// 	// font-weight: bold;
+// 	height: 50px;
+// 	border: 1px solid black;
+// 	// display: none;
+// 	cursor: pointer;
+// 	position: relative;
+// }
+
+ .primary-button {
+	background-color: var(--hospital-green);
+	border-radius: 8px;
+	border: none;
+	color: var(--white);
+	// color: red;
+	width: 100%;
+	cursor: pointer;
+	font-size: var(--md);
+	font-weight: bold;
+	height: 50px;
+	// border: 1px solid black;
+	cursor: pointer;
+}
+// @media (max-width: 640px) {
+// 	.MyOrder {
+// 		width: 100%;
+// 	}
+// }
+
+@keyframes swipeLeft {
+	0%{
+		width: 0;
+	}
+	100% {
+		width: 360px;
+	}
+}
+
+@media (min-width: 768px){
+.primary-button {
+	position: relative;
+	// display: block;
+	z-index: 30;
+}
+}
