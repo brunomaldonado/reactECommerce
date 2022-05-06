@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/PasswordRecovery.scss';
 import logo from '../assets/logos/logo_yard_sale.svg';
+import { NavLink } from 'react-router-dom';
 
 const PasswordRecovery = () => {
 	return (
@@ -13,7 +14,7 @@ const PasswordRecovery = () => {
 					<label htmlFor="email" className="label">Email address</label>
 					<input type="text" id="email" className="input input-email" />
 					{/* <input type="submit" value="Confirm" className="primary-button login-button" /> */}
-					<button className="primary-button"><a href="/send-email">Confirm</a></button>
+					<button className="primary-button"><NavLink to="/send-email">Confirm</NavLink></button>
 				</form>
 			</div>
 		</div>

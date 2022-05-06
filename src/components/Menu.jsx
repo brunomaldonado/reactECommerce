@@ -1,21 +1,21 @@
 import React from "react";
 import "../styles/Menu.scss";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Menu = () => {
   return (
     <div className="Menu">
       <ul>
         <li>
-          <Link to="/orders" className="title">
+          <NavLink to="/orders" className="title">
             My orders
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <a href="/account">My account</a>
+          <NavLink to="/account">My account</NavLink>
         </li>
         <li>
-          <a href="/login">Sing out</a>
+          <NavLink to="/login">Sing out</NavLink>
         </li>
       </ul>
     </div>

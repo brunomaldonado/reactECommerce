@@ -7,6 +7,7 @@ import AppContext from "../context/AppContext";
 import MyOrder from "../containers/MyOrder";
 // import menu from "../assets/icons/icon_menu.svg";
 import close from "../assets/icons/icon_close.png";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false); //show Menu
@@ -83,7 +84,7 @@ const Header = () => {
               <p>
                 brunomaldonado@... <span name="name" id=""></span>
               </p>
-              <a href="/login" >Sing out</a>
+              <NavLink to="/login" >Sing out</NavLink>
             </li>
           </ul>
         </div>

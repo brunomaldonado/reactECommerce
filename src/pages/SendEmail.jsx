@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/SendEmail.scss";
 import logo from "../assets/logos/logo_yard_sale.svg";
 import email from "../assets/icons/email.svg";
+import { NavLink } from "react-router-dom";
 
 const SendEmail = () => {
   return (
@@ -18,7 +19,7 @@ const SendEmail = () => {
         <button className="primary-button login-button"><a href="/login">Login</a></button>
         <p className="resend">
           <span>Didn't receive the email?</span>
-          <a href="/">Resend</a>
+          <NavLink to="/">Resend</NavLink>
         </p>
       </div>
     </div>

@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "../styles/Login.scss";
 import logo from "../assets/logos/logo_yard_sale.svg";
 import shop from "../assets/img/shop.png"
+import { NavLink } from "react-router-dom";
 
 const Login = () => {
   const form = useRef(null);
@@ -46,9 +47,9 @@ const Login = () => {
           >
             Log in
           </button>
-          <a href="/password-recovery">Forgot my password</a>
+          <NavLink to="/password-recovery">Forgot my password</NavLink>
         </form>
-        <button className="secondary-button signup-button"><a href="/signup">Sign up</a></button>
+        <button className="secondary-button signup-button"><NavLink to="/signup">Sign up</NavLink></button>
       </div>
     </div>
   );
