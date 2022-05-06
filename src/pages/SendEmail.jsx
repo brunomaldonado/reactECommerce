@@ -16,7 +16,7 @@ const SendEmail = () => {
         <div className="email-image">
           <img src={email} alt="email" />
         </div>
-        <button className="primary-button login-button"><a href="/login">Login</a></button>
+        <button className="primary-button login-button"><NavLink to="/login">Login</NavLink></button>
         <p className="resend">
           <span>Didn't receive the email?</span>
           <NavLink to="/">Resend</NavLink>
