@@ -52,7 +52,7 @@ const Header = () => {
   }
 
   return (
-    <header className="banner-slider">
+    <header className="main">
       <img src={logo} alt="logo" className="nav-logo" />
       <nav ref={navRef}>
         <div className="navbar-left">
@@ -83,10 +83,11 @@ const Header = () => {
               <p>
                 brunomaldonado@... <span name="name" id=""></span>
               </p>
-              <p>Sing out</p>
+              <a href="/login" >Sing out</a>
             </li>
           </ul>
         </div>
+      {toggle && <Menu />}
       </nav>
       <div className="navbar-right">
         {!navBarOpen ? (
@@ -96,7 +97,7 @@ const Header = () => {
             <span className="br-3"></span>
           </button>
         ) : (
-          <img id="btn-close" src={close} alt="" onClick={closeNav} />
+          <div className="btn-close"><img className="btn-close" src={close} alt="" onClick={closeNav} /></div>
         )}
 
         <ul>
@@ -106,10 +107,10 @@ const Header = () => {
               {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
             </li>
           ) : (
-            <img id="btn-close" src={close} alt="" onClick={closeBanner} />
+            <div className="btn-close"><img className="btn-close" src={close} alt="" onClick={closeBanner} /></div>
           )}
         </ul>
-        {toggle && <Menu />}
+        {/* {toggle && <Menu />} */}
         {toggleOrders && <MyOrder />}
       </div>
     </header>

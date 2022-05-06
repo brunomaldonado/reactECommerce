@@ -1,40 +1,79 @@
 @import 'vars';
 
 .Login {
-	width: 100%;
+	width: 100vw;
+	// height: calc(100vh - 100px);
 	height: 90vh;
+	overflow-y: hidden;
+	overflow-x: hidden;
 	display: grid;
 	place-content: center;
 	place-items: center;
+	background-color: #fff;
+	z-index: 3;
+	position: absolute;
+	top: 0;
 }
+
+.shop {
+	height: 95vh;
+	position: fixed;
+	bottom: 0;
+	left: 20%;
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition-duration: 0.8s;
+	transition: 1s ease;
+	background-color: #fff;
+}
+
+
+
 .Login-container {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	width: 300px;
-
+	width: 375px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 4px;
+	padding: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.255);
 }
-.logo {
+
+.Login-container button {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.logo_ {
 	width: 150px;
 	margin-bottom: 48px;
 	justify-self: center;
 	// display: none;
 }
+
 .form {
 	display: flex;
 	flex-direction: column;
+	margin: 0 auto;
+	width: 300px;
 }
+
 .form a {
 	color: var(--hospital-green);
 	font-size: var(--sm);
 	text-align: center;
 	text-decoration: none;
+	margin-top: 14px;
 	margin-bottom: 52px;
 }
+
 .label {
 	font-size: var(--sm);
 	font-weight: bold;
 	margin-bottom: 4px;
 }
+
 .input {
 	background-color: var(--text-input-field);
 	border: none;
@@ -44,9 +83,11 @@
 	padding: 6px;
 	margin-bottom: 12px;
 }
+
 .input-email {
 	margin-bottom: 22px;
 }
+
 .primary-button {
 	background-color: var(--hospital-green);
 	border-radius: 8px;
@@ -58,6 +99,7 @@
 	font-weight: bold;
 	height: 50px;
 }
+
 .secondary-button {
 	background-color: var(--white);
 	border-radius: 8px;
@@ -69,16 +111,19 @@
 	font-weight: bold;
 	height: 50px;
 }
+
+.secondary-button a {
+	color: var(--hospital-green);
+}
+
 .login-button {
 	margin-top: 14px;
 	margin-bottom: 30px;
 }
-@media (min-width: 568px) {
-	.logo {
-		display: block;
+
+@media (max-width: 475px) {
+	.Login-container {
+		width: 300px;
 	}
-	.Login {
-		height: 60vh;
-		padding: calc(3rem + 4%) 0rem 3rem;
-	}
+
 }

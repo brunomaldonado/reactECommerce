@@ -4,6 +4,8 @@
 	padding-left: 1.8rem;
 	padding-right: 1.8rem;
 	position: relative;
+  transition: ease 1s;
+
 }
 .main-container.content {
 	margin-bottom: 2rem;
@@ -15,8 +17,6 @@
 	place-items: center;
 	align-self: center;
 	gap: 14px;
-	margin: -8em 0 0 0;
-
 }
 
 @media (max-width: 475px) {
@@ -25,7 +25,6 @@
 		grid-template-columns: 1fr;
 		place-items: center;
 		align-self: center;
-		margin: -4em 0 0 0;
 	}
 }
 
@@ -41,7 +40,6 @@
 		grid-template-columns: 1fr 1fr;
 		place-items: center;
 		align-self: center;
-		margin: -12em 0 0 0;
 	}
 }
 
@@ -55,7 +53,7 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		place-items: center;
 		align-self: center;
-		margin: -16em 0 0 0;
+		margin: -5rem 0;
 	}
 }
 
@@ -64,11 +62,8 @@
 		width: 927px;
 		margin: auto;
 	}
-
-	.ProductList {
-		margin: -18em 0 0 0;
-	}
 }
+
 
 @media (min-width: 1200px) {
 	.content {
@@ -81,7 +76,6 @@
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		place-items: center;
 		align-self: center;
-		margin: -22em 0 0 0;
 	}
 }
 
@@ -96,6 +90,5 @@
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 		place-items: center;
 		align-self: center;
-		margin: -26em 0 0 0;
 	}
 }

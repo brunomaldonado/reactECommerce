@@ -3,6 +3,7 @@ import OrderItem from "../components/OrderItem";
 import AppContext from "../context/AppContext";
 import "../styles/MyOrder.scss";
 import close from "../assets/icons/icon_close.png";
+import { Link, NavLink } from "react-router-dom";
 
 const MyOrder = () => {
   const { state } = useContext(AppContext);
@@ -17,7 +18,7 @@ const MyOrder = () => {
   return (
     <aside className="MyOrder drawer open-right">
       <div className="title-container">
-        <img id="btn-close" src={close} alt="close" />
+        <img className="btn-close" src={close} alt="close" />
         <p className="title">My order</p>
       </div>
       <div className="relative">
@@ -38,11 +39,13 @@ const MyOrder = () => {
           </p>
           <p>$ {subTotal().toFixed(2)}</p>
         </div>
-        <span className="title-bottom">
+        {/* <span className="title-bottom">
           Shipping, taxes, and discounts calculated at checkout.
-        </span>
-        <input type="submit" value="Check out" className="primary-button btn-cheackout" />
-        {/* <button className="primary-bsdutton btn-cheackout">Check out</button> */}
+        </span> */}
+        {/* <input type="submit" value="Check out" className="primary-button btn-cheackout" /> */}
+        {/* <button className="primary-button"><NavLink to="/checkout">Check out</NavLink></button> */}
+        {/* <NavLink className="primary-button" to="/checkout">Check out</NavLink> */}
+        <NavLink className="primary-button_" to="/checkout">Check out</NavLink>
       </div>
     </aside>
   );

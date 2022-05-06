@@ -16,7 +16,7 @@ const MyAccount = () => {
 						<p className="value">*********</p>
 					</div>
 				</form>
-				<button className="secondary-button login-button">Login</button>
+				<button className="secondary-button login-button"><a href="/login">Login</a></button>
 				{/* <input type="submit" value="Edit" className="secondary-button login-button" /> */}
 			</div>
 		</div>

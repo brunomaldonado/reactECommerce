@@ -2,9 +2,14 @@
 
 .Orders {
 	width: 100%;
-	height: 100vh;
+	// height: 90vh;
+	height: calc(90vh - 100px);
 	display: grid;
 	place-items: center;
+	position: absolute;
+	top: 50px;
+	background: #fff;
+	z-index: 1;
 }
 .title {
 	font-size: var(--lg);
@@ -13,7 +18,9 @@
 .Orders-container {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	width: 300px;
+	// width: 300px;
+	min-width: 310px;
+	max-width: 375px;
 }
 .Orders-content {
 	display: flex;

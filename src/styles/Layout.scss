@@ -1,6 +1,19 @@
 .Layout {
-  position: relative;
+  // position: relative;
+  // overflow-y: hidden;
+  // overflow: hidden;
+  height: 100%;
+  // border: 1px solid red;
 }
+
+// .carousel {
+//   width: 100%;
+//   position: absolute;
+//   // top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, 0%);
+//   // max-height: 75%;
+// }
 // .Layout,.container-carousel {
 //   height: 75%;
 // }
@@ -8,4 +21,10 @@
 // .container-carousel {
 //   // position: absolute;
 //   height: 75%;
+// }
+
+// @media (min-width: 1200px) {
+//   .Layout {
+//     height: max-content;
+//   }
 // }
