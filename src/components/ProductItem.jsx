@@ -39,7 +39,7 @@ const ProductItem = ({ product }) => {
   return (
     <div className="ProductItem">
       {/* <Link to={`/product/${product.id}`}> */}
-      <img src={product.image} alt="" />
+      <img src={product.image} alt={product.category} />
       {/* </Link> */}
       <div className="product-info">
         <div>

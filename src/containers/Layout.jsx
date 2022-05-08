@@ -1,5 +1,4 @@
 import React from "react";
-// import Banner from "../components/Banner";
 import Carousel from "../components/Carousel";
 import Header from "../components/Header";
 import "../styles/Layout.scss";
@@ -10,8 +9,7 @@ const Layout = ({ children }) => {
   return (
     <div className="Layout">
       <Header />
-			{/* <Banner /> */}
-      <div className="carousel contentr">
+      <div className="carousel">
         <Carousel images={images} autoPlay={true}/>
       </div>
       {children}

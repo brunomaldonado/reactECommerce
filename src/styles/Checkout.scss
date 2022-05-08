@@ -4,7 +4,7 @@
 	width: 100%;
 	position: absolute;
 	top: 50px;
-	height: 90vh;
+	height: 85%;
 	background: #fff;
 	z-index: 1;
 
@@ -60,17 +60,10 @@
 
 .Checkout {
 	width: 100%;
-	height: 90vh;
+	height: 85%;
 	display: grid;
 	place-items: center;
 	position: relative;
-	// background: rgb(50, 59, 59);
-	background: #fff;
-	// position: absolute;
-	// top: 40px;
-	z-index: 3;
-	// position: absolute;
-	// top: 50px;
 }
 .title {
 	font-size: var(--lg);

@@ -2,6 +2,7 @@
 .banner-carousel {
   width: 100%;
   position: relative;
+  // top: 50px;
 }
 
 .banner-carousel::after{
@@ -91,20 +92,15 @@
 
 
 
-// @media (min-width: 768px) {
-//   // .right {
-//   //   position: absolute;
-//   //   right: 1rem;
-//   // }
-  
-//   // .left {
-//   //   position: absolute;
-//   //   left: 1rem;
-//   // }
-//   // .banner-carousel img {
-//   //   height: 30%;
-//   // }
-// }
+@media (min-width: 890px) {
+  .banner-carousel {
+    width: 100%;
+    position: relative;
+    top: 50px;
+  }
+}
+
+
 
 @media (min-width: 992px) {
   .main {

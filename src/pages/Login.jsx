@@ -30,7 +30,7 @@ const Login = () => {
             type="text"
             name="email"
             placeholder="platzi@example.com"
-            className="input input-email"
+            className="input-login input-email"
           />
           <label htmlFor="password" className="label">
             Password
@@ -39,7 +39,7 @@ const Login = () => {
             type="password"
             name="password"
             placeholder="*********"
-            className="input input-password"
+            className="input-login input-password"
           />
           <button
             className="primary-button login-button"

@@ -17,10 +17,9 @@ const MyOrder = () => {
 
   return (
     <aside className="MyOrder drawer open-right">
-      <div className="title-container">
-        <img className="btn-close" src={close} alt="close" />
-        <p className="title">My order</p>
-      </div>
+      <h2 className="title-container">
+        My order
+      </h2>
       <div className="relative">
         <div className="my-order-content">
           {state.cart.length > 0 ? (
@@ -34,18 +33,13 @@ const MyOrder = () => {
       </div>
       <div className="checkout-order-bottom">
         <div className="order">
-          <p>
-            <span>Subtotal</span>
-          </p>
-          <p>$ {subTotal().toFixed(2)}</p>
+          <span>Subtotal</span>
+          <span>$ {subTotal().toFixed(2)}</span>
         </div>
-        {/* <span className="title-bottom">
+        <span className="title-bottom">
           Shipping, taxes, and discounts calculated at checkout.
-        </span> */}
-        {/* <input type="submit" value="Check out" className="primary-button btn-cheackout" /> */}
-        {/* <button className="primary-button"><NavLink to="/checkout">Check out</NavLink></button> */}
-        {/* <NavLink className="primary-button" to="/checkout">Check out</NavLink> */}
-        <NavLink className="primary-button_" to="/checkout">Check out</NavLink>
+        </span>
+        <button className="primary-button"><Link to="/checkout">Check out</Link></button>
       </div>
     </aside>
   );

@@ -8,7 +8,7 @@ const SendEmail = () => {
   return (
     <div className="SendEmail">
       <div className="form-container">
-        {/* <img src={logo} alt="logo" className="logo" /> */}
+        <img src={logo} alt="logo" className="logo_" />
         <h1 className="title">Email has been sent!</h1>
         <p className="subtitle">
           Please check your inbox for instructions on how to reset the password

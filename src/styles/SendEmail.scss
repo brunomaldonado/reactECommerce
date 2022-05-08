@@ -2,14 +2,14 @@
 
 .SendEmail {
 	width: 100%;
-	height: calc(100vh - 100px);
+	height: 100%;
 	display: grid;
 	place-content: center;
 	place-items: center;
 	position: absolute;
-	top: 50px;
+	top: 0;
 	background-color: #fff;
-	z-index: 1;
+	z-index: 30;
 }
 .form-container {
 	display: grid;
